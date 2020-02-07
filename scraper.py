@@ -1,14 +1,10 @@
+import scrapy
 
 
-try: 
-    from googlesearch import search 
-except ImportError:  
-    print("No module named 'google' found") 
+class HousePriceSpider(scrapy.Spider) :
+	name = "house_price_spider"
+	start_urls = ['http://www.vitalsigns.mtc.ca.gov/home-prices']
 
-# to search 
-query = "Bay Area Housing Prices"
-  
-for j in search(query, tld="com", lang='en', num=10): 
-    print(j) 
+
 
 
