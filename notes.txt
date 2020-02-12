@@ -1,0 +1,4 @@
+
+
+
+In order to use pyodbc on my mac, I needed to use the driver manager unixODBC and the driver FreeTDS. I had to update the the FreeTDS config file freetds.conf and I had to update the config files for unixODBC odbcinst.ini and odbc.ini files
