@@ -4,7 +4,7 @@ import os
 This portion finds URLs that may contain information about housing prices in the San Francisco Bay area and stores them in a textfile.
 '''
 
-try: 
+try:
 	from googlesearch import search
 except ImportError:
 	print("No module named 'google' found, trying to download now")
@@ -13,7 +13,7 @@ except ImportError:
 
 # to search
 query = "Bay Area Housing Prices"
-file = open("_urls.txt", "w")
+file = open("urls.txt", "w")
 
 for j in search(query, tld="com", lang='en', num=10, pause = 2.0):
 	file.write(j + "\n")
